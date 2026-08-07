@@ -6,7 +6,7 @@ project(KItemModels VERSION ${KF_VERSION})
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 include(FeatureSummary)
-find_package(ECM 6.28.0 NO_MODULE)
+find_package(ECM 6.29.0 NO_MODULE)
 set_package_properties(ECM PROPERTIES
     TYPE REQUIRED
     DESCRIPTION "Extra CMake Modules."
