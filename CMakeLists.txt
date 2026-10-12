@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.29)
+cmake_minimum_required(VERSION 3.30)
 
 set(KF_VERSION "6.30.0") # handled by release scripts
 project(KItemModels VERSION ${KF_VERSION})
@@ -29,8 +29,9 @@ include(ECMGenerateExportHeader)
 include(ECMDeprecationSettings)
 include(CMakePackageConfigHelpers)
 include(ECMGenerateQDoc)
+include(ECMInstalledLibraryCheck)
 
-set(REQUIRED_QT_VERSION 6.9.0)
+set(REQUIRED_QT_VERSION 6.10.0)
 find_package(Qt6Core ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE)
 find_package(Qt6Qml ${REQUIRED_QT_VERSION} NO_MODULE)
 
